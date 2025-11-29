@@ -46,6 +46,8 @@ def kadane_max_subarray_sum(arr):
     return result
 
 
-arr = [-3, 4, 1, 2, 4, -10, 11]
-result = kadane_max_subarray_sum(arr)
-print("result:", result)
+# Example usage
+if __name__ == "__main__":
+    arr = [-3, 4, 1, 2, 4, -10, 11]
+    result = kadane_max_subarray_sum(arr)
+    print("result:", result)
