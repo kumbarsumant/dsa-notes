@@ -14,18 +14,19 @@ Output: [ -1, -1, -1 ]
 
 def nearest_left_small_number(arr):
     stack = []
-    result = []
+    result = [-1] * len(arr)
 
-    for num in arr:
-        # pop elements until we get strictly smaller element
-        while len(stack) != 0 and stack[-1] >= num:
+    for i in range(len(arr)):
+        num = arr[i]
+        while stack and stack[-1] >= num:
             stack.pop()
-        if len(stack) == 0:
-            result.append(-1)
-        else:
-            result.append(stack[-1])
-        stack.append(num)
 
+        if stack:
+            result[i] = stack[-1]
+
+        # if stack is empty, -1 has to be added this is already there
+
+        stack.append(num)
     return result
 
 
