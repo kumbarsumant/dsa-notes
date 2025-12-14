@@ -18,15 +18,32 @@ Input: [2, 1, 5, 6, 1, 3]
 Output: 10 (two bars 5 and 6 => min height is 5 hence 5 * 2 = 10)
 """
 
-# For any bar i, the largest rectangle with height = A[i]
-# can only extend until we hit a bar smaller than A[i]
-# on the left and on the right.
+# Intuition:
 #
-# So if we know:
-#   - nearest smaller bar on the left
-#   - nearest smaller bar on the right
-# then width = right - left - 1
-# and area = height * width
+# For any bar i, assume it is the smallest bar in the rectangle.
+# The rectangle with height = A[i] can only extend left and right
+# until we encounter a bar smaller than A[i].
+#
+# So for each bar, we need:
+#   - the nearest smaller bar on the left
+#   - the nearest smaller bar on the right
+#
+# These two bars act as boundaries where extension must stop.
+#
+# Width calculation:
+#   width = right_smaller_index - left_smaller_index - 1
+#
+# We use:
+#   -1 as the virtual index before the array (no smaller bar on the left)
+#    n  as the virtual index after the array  (no smaller bar on the right)
+#
+# The rectangle spans only the bars strictly between these two indices.
+#
+# Area for bar i:
+#   area = A[i] * width
+#
+# Using a monotonic increasing stack lets us find nearest smaller
+# elements on both sides in O(n), since each bar is pushed and popped once.
 
 
 def _left_nearest_small(arr):
