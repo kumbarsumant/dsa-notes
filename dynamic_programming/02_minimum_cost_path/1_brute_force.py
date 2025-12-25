@@ -45,22 +45,22 @@ Special Considerations:
 """
 
 
-def find_min_cost_path(grid, i, j):
+def _get_min_cost(grid, i, j):
     # Base Case: The starting point
     if i == 0 and j == 0:
         return grid[i][j]
 
     # Edge Case: Top row (can only come from the left)
     if i == 0:
-        return find_min_cost_path(grid, i, j - 1) + grid[i][j]
+        return _get_min_cost(grid, i, j - 1) + grid[i][j]
 
     # Edge Case: First column (can only come from above)
     if j == 0:
-        return find_min_cost_path(grid, i - 1, j) + grid[i][j]
+        return _get_min_cost(grid, i - 1, j) + grid[i][j]
 
     # Recursive Step: Min of Top and Left
-    min_cost_top_cell = find_min_cost_path(grid, i - 1, j)
-    min_cost_left_cell = find_min_cost_path(grid, i, j - 1)
+    min_cost_top_cell = _get_min_cost(grid, i - 1, j)
+    min_cost_left_cell = _get_min_cost(grid, i, j - 1)
 
     return min(min_cost_top_cell, min_cost_left_cell) + grid[i][j]
 
@@ -68,7 +68,7 @@ def find_min_cost_path(grid, i, j):
 def min_cost_path(grid):
     n = len(grid)
     m = len(grid[0])
-    return find_min_cost_path(grid, n - 1, m - 1)
+    return _get_min_cost(grid, n - 1, m - 1)
 
 
 if __name__ == "__main__":
