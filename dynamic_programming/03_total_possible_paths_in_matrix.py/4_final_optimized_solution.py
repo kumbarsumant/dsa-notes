@@ -87,3 +87,5 @@ if __name__ == "__main__":
     matrix = [[0, 0, 1, 0, 1], [0, 0, 0, 0, 1], [0, 0, 1, 0, 0], [1, 0, 0, 0, 0]]
 
     print(f"Total Possible Paths: {total_possible_paths(matrix)}")
+
+

@@ -9,7 +9,7 @@ Examples
 --------
 Example 1:
     Input:  string = "aaabbccd"
-    Output: "bd"
+    Output: "ad"
 
 Example 2:
     Input:  string = "abccba"
