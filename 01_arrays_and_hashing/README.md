@@ -1,6 +1,6 @@
 ### 1. Contains Duplicate
 
-[Neetcode](https://neetcode.io/solutions/contains-duplicate) |
+[NeetCode](https://neetcode.io/solutions/contains-duplicate) |
 [Python File](./01_contains_duplicate.py)
 
 - **Pattern:** Hash Set (Seen/Unseen, Unique)
