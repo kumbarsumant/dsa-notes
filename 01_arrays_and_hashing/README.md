@@ -1,6 +1,6 @@
 ### 1. Contains Duplicate
 
-[Neetcode Link](https://neetcode.io/solutions/contains-duplicate) |
+[Neetcode](https://neetcode.io/solutions/contains-duplicate) |
 [Python File](./01_contains_duplicate.py)
 
 - **Pattern:** Hash Set (Seen/Unseen, Unique)
@@ -10,7 +10,7 @@
 
 ### 2. Valid Anagram
 
-[NeetCode Solution](https://neetcode.io/solutions/valid-anagram) |
+[NeetCode](https://neetcode.io/solutions/valid-anagram) |
 [Python File](./02_valid_anagrams.py)
 
 - **Pattern:** Frequency Count (Hash Map)
@@ -20,7 +20,7 @@
 
 ### 3. Two Sum
 
-[NeetCode Solution](https://neetcode.io/solutions/two-sum) |
+[NeetCode](https://neetcode.io/solutions/two-sum) |
 [Python File](./03_two_sum.py)
 
 - **Pattern:** Hash Map (Seen/Unseen with index reference)
