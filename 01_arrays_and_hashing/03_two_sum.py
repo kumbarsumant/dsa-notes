@@ -1,21 +1,12 @@
-# https://neetcode.io/solutions/two-sum
+class Solution:
+    def twoSum(self, nums: list[int], target: int) -> list[int]:
+        hmap = dict()
 
-# Brute force:
-# Add each pairs and check if it equals target
-# Time: O(n^2), Space: O(1)
-
-# Sorting:
-# Sort the numbers, use left and right pointer, move left or right pointer comparing the sum with target
-# Time: O(nlogn), Space: O(1)
-
-def two_sum(nums, target):
-    seen_map = dict()
-
-    for index, num in enumerate(nums):
-        diff = target - num
-        if diff in seen_map:
-            return [seen_map[diff], index]
-        else:
-            seen_map[num] = index
-
-    return [-1, -1]
+        ans = [-1, -1]
+        for index, num in enumerate(nums):
+            if target - num in hmap:
+                ans[0], ans[1] = hmap[target - num], index
+                break
+            else:
+                hmap[num] = index
+        return ans
