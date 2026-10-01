@@ -27,3 +27,9 @@
 - [Python File](./05_top_k_frequent_element.py)
 - [LeetCode Problem](https://leetcode.com/problems/top-k-frequent-elements/)
 - [NeetCode Explanation](https://neetcode.io/solutions/top-k-frequent-elements)
+
+### Encode and Decode Strings
+
+- [Python File](./06_encode_and_decode_strings.py)
+- [LeetCode Problem](https://leetcode.com/problems/encode-and-decode-strings/description/)
+- [NeetCode Explanation](https://neetcode.io/solutions/encode-and-decode-strings)
