@@ -33,3 +33,9 @@
 - [Python File](./06_encode_and_decode_strings.py)
 - [LeetCode Problem](https://leetcode.com/problems/encode-and-decode-strings/description/)
 - [NeetCode Explanation](https://neetcode.io/solutions/encode-and-decode-strings)
+
+### Product of Array Ecept Self
+
+- [Python File](./07_product_of_array_except_self.py)
+- [LeetCode Problem](https://leetcode.com/problems/product-of-array-except-self/)
+- [NeetCode Explanation](https://neetcode.io/solutions/product-of-array-except-self)
